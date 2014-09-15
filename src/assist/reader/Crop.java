@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 
 import com.edmodo.cropper.CropImageView;
 
+@SuppressLint("CutPasteId")
 public class Crop extends Activity {
 
     // Static final constants
