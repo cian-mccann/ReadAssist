@@ -86,22 +86,21 @@ public class Crop extends Activity {
 		{		   
 		}
 
-        // Initialize components of the app
-        final CropImageView cropImageView = (CropImageView) findViewById(R.id.cropImageView);
-
+        
         //Sets the rotate button
         final Button rotateButton = (Button) findViewById(R.id.Button_rotate);
         rotateButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+            	 final CropImageView cropImageView = (CropImageView) findViewById(R.id.cropImageView);
                 cropImageView.rotateImage(ROTATE_NINETY_DEGREES);
             }
         });
     }
         
 
-	// Method for the retake button at the top
+	// Method for the re-take button at the top
 	public void crop(View v)
 	{
 		CropImageView cropImageView = (CropImageView) findViewById(R.id.cropImageView);
