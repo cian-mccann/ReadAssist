@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="assist.reader"
-    android:versionCode="2"
-    android:versionName="2.0" >
+    android:versionCode="3"
+    android:versionName="2.1" >
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="18" />
+        android:targetSdkVersion="L" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Holo.Light.ButtonBar" >
         <activity
-            android:name="assist.reader.MainActivity"
+            android:name="com.reader.assist.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="assist.reader.PerformOCR"
+            android:name="com.reader.assist.PerformOCR"
             android:label="Converted Text"
             android:parentActivityName="ie.readassist.MainActivity" >
             <meta-data
@@ -34,23 +34,23 @@
                 android:value="ie.readassist.MainActivity" />
         </activity>
         <activity
-            android:name="assist.reader.TranslateActivity"
+            android:name="com.reader.assist.TranslateActivity"
             android:label="Translator" >
         </activity>
         <activity
-            android:name="assist.reader.Editor"
+            android:name="com.reader.assist.Editor"
             android:label="@string/title_activity_editor" >
         </activity>
         <activity
-            android:name="assist.reader.Crop"
+            android:name="com.reader.assist.Crop"
             android:label="@string/title_activity_crop" >
         </activity>
         <activity
-            android:name="assist.reader.MongoActivity"
+            android:name="com.reader.assist.MongoActivity"
             android:label="@string/title_activity_mongo" >
         </activity>
         <activity
-            android:name="assist.reader.History"
+            android:name="com.reader.assist.History"
             android:label="@string/title_activity_history" >
         </activity>
     </application>
